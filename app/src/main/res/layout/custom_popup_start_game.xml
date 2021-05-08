@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/default_popup_padding">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center_horizontal"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splash_screen" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAchievements"
+        style="@style/button_default"
+        android:layout_marginTop="@dimen/default_popup_margin"
+        android:text="@string/achievements" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLeaderBoard"
+        style="@style/button_default"
+        android:layout_marginTop="@dimen/default_popup_margin"
+        android:text="@string/leaderboard" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        style="@style/button_option"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/default_popup_margin"
+        android:text="@string/start_game" />
+
+</LinearLayout>

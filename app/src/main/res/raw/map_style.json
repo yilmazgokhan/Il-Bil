@@ -1,0 +1,27 @@
+[
+  {
+    "mapFeature": "administrative",
+    "options": "labels.text.stroke",
+    "visibility": false
+  },
+  {
+    "mapFeature": "landcover",
+    "options": "labels.text.stroke",
+    "visibility": false
+  },
+  {
+    "mapFeature": "poi",
+    "options": "labels.text.stroke",
+    "visibility": false
+  },
+  {
+    "mapFeature": "road",
+    "options": "labels.text.stroke",
+    "visibility": false
+  },
+  {
+    "mapFeature": "transit",
+    "options": "labels.text.stroke",
+    "visibility": false
+  }
+]

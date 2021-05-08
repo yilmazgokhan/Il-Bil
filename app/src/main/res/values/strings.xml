@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">İl Bil</string>
+    <string name="finish">Tekrar Oyna</string>
+    <string name="correct_answer">Doğru</string>
+    <string name="time">Süre</string>
+    <string name="score">Puan</string>
+    <string name="leaderboard">Lider Tablosu</string>
+    <string name="start_game">Oyuna Başla</string>
+    <string name="privacy_policy">Gizlilik Politikası ve Hizmet Şartları</string>
+    <string name="privacy_policy_link">https://gist.github.com/yilmazgokhan/5eeab96d2e112d6ed35acdb321e5317c</string>
+    <string name="achievements">Başarımlar</string>
+    <string name="ok">Tamam</string>
+</resources>

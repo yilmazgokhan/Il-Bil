@@ -1,0 +1,24 @@
+{
+  "city": [
+    {
+      "name": "Adana",
+      "osm_id": 167216
+    },
+    {
+      "name": "Adıyaman",
+      "osm_id": 223141
+    },
+    {
+      "name": "Afyon",
+      "osm_id": 223171
+    },
+    {
+      "name": "Ağrı",
+      "osm_id": 186433
+    },
+    {
+      "name": "Amasya",
+      "osm_id": 223452
+    }
+  ]
+}

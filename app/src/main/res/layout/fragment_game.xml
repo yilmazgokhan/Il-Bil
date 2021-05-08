@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.GameFragment">
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewConfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view_map"
+        android:name="com.huawei.hms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <rm.com.clocks.ClockImageView
+            android:id="@+id/clock_animation"
+            android:layout_width="@dimen/clock_size"
+            android:layout_height="@dimen/clock_size"
+            android:layout_marginEnd="@dimen/default_popup_margin"
+            app:clockColor="@color/color_2"
+            app:frameWidth="regular"
+            app:hours="16"
+            app:indeterminateSpeed="2"
+            app:minutes="20"
+            app:pointerWidth="thin"
+            app:timeSetDuration="400" />
+
+        <com.yy.mobile.rollingtextview.RollingTextView
+            android:id="@+id/alphaBetView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/color_2"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/color_1"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="@dimen/heart_size"
+            android:layout_height="@dimen/heart_size"
+            android:layout_alignLeft="@id/second"
+            android:layout_marginStart="-24dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="@dimen/heart_size"
+            android:layout_height="@dimen/heart_size"
+            android:layout_alignLeft="@id/first"
+            android:layout_marginStart="-24dp"
+            android:layout_marginEnd="-24dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="@dimen/heart_size"
+            android:layout_height="@dimen/heart_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/heart" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btnOptionSHow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/customOption"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_expand_less_24"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/customOption"
+        layout="@layout/custom_option"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

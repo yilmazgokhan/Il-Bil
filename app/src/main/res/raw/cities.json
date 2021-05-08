@@ -1,0 +1,328 @@
+{
+  "city": [
+    {
+      "name": "Adana",
+      "osm_id": 167216
+    },
+    {
+      "name": "Adıyaman",
+      "osm_id": 223141
+    },
+    {
+      "name": "Afyon",
+      "osm_id": 223171
+    },
+    {
+      "name": "Ağrı",
+      "osm_id": 186433
+    },
+    {
+      "name": "Amasya",
+      "osm_id": 223452
+    },
+    {
+      "name": "Ankara",
+      "osm_id": 223422
+    },
+    {
+      "name": "Antalya",
+      "osm_id": 223132
+    },
+    {
+      "name": "Artvin",
+      "osm_id": 223448
+    },
+    {
+      "name": "Aydın",
+      "osm_id": 223166
+    },
+    {
+      "name": "Balıkesir",
+      "osm_id": 223464
+    },
+    {
+      "name": "Bilecik",
+      "osm_id": 223420
+    },
+    {
+      "name": "Bingöl",
+      "osm_id": 223444
+    },
+    {
+      "name": "Bitlis",
+      "osm_id": 223441
+    },
+    {
+      "name": "Bolu",
+      "osm_id": 223461
+    },
+    {
+      "name": "Burdur",
+      "osm_id": 2319368
+    },
+    {
+      "name": "Bursa",
+      "osm_id": 223463
+    },
+    {
+      "name": "Çanakkale",
+      "osm_id": 223471
+    },
+    {
+      "name": "Çankırı",
+      "osm_id": 223454
+    },
+    {
+      "name": "Çorum",
+      "osm_id": 223453
+    },
+    {
+      "name": "Denizli",
+      "osm_id": 223169
+    },
+    {
+      "name": "Diyarbakır",
+      "osm_id": 223435
+    },
+    {
+      "name": "Edirne",
+      "osm_id": 223465
+    },
+    {
+      "name": "Elâzığ",
+      "osm_id": 223443
+    },
+    {
+      "name": "Erzincan",
+      "osm_id": 223445
+    },
+    {
+      "name": "Erzurum",
+      "osm_id": 186432
+    },
+    {
+      "name": "Eskişehir",
+      "osm_id": 223421
+    },
+    {
+      "name": "Gaziantep",
+      "osm_id": 223139
+    },
+    {
+      "name": "Giresun",
+      "osm_id": 223449
+    },
+    {
+      "name": "Gümüşhane",
+      "osm_id": 223541
+    },
+    {
+      "name": "Hakkâri",
+      "osm_id": 174742
+    },
+    {
+      "name": "Hatay",
+      "osm_id": 223122
+    },
+    {
+      "name": "Isparta",
+      "osm_id": 223134
+    },
+    {
+      "name": "Mersin",
+      "osm_id": 223131
+    },
+    {
+      "name": "İstanbul",
+      "osm_id": 223474
+    },
+    {
+      "name": "İzmir",
+      "osm_id": 223167
+    },
+    {
+      "name": "Kars",
+      "osm_id": 186431
+    },
+    {
+      "name": "Kastamonu",
+      "osm_id": 223456
+    },
+    {
+      "name": "Kayseri",
+      "osm_id": 154451
+    },
+    {
+      "name": "Kırklareli",
+      "osm_id": 223469
+    },
+    {
+      "name": "Kırşehir",
+      "osm_id": 154452
+    },
+    {
+      "name": "Kocaeli",
+      "osm_id": 223473
+    },
+    {
+      "name": "Konya",
+      "osm_id": 223133
+    },
+    {
+      "name": "Kütahya",
+      "osm_id": 223172
+    },
+    {
+      "name": "Malatya",
+      "osm_id": 223426
+    },
+    {
+      "name": "Manisa",
+      "osm_id": 223168
+    },
+    {
+      "name": "Kahramanmaraş",
+      "osm_id": 223138
+    },
+    {
+      "name": "Mardin",
+      "osm_id": 223436
+    },
+    {
+      "name": "Muğla",
+      "osm_id": 223136
+    },
+    {
+      "name": "Muş",
+      "osm_id": 223440
+    },
+    {
+      "name": "Nevşehir",
+      "osm_id": 154449
+    },
+    {
+      "name": "Niğde",
+      "osm_id": 154456
+    },
+    {
+      "name": "Ordu",
+      "osm_id": 223450
+    },
+    {
+      "name": "Rize",
+      "osm_id": 223542
+    },
+    {
+      "name": "Sakarya",
+      "osm_id": 223462
+    },
+    {
+      "name": "Samsun",
+      "osm_id": 223451
+    },
+    {
+      "name": "Siirt",
+      "osm_id": 223543
+    },
+    {
+      "name": "Sinop",
+      "osm_id": 223457
+    },
+    {
+      "name": "Sivas",
+      "osm_id": 223425
+    },
+    {
+      "name": "Tekirdağ",
+      "osm_id": 223470
+    },
+    {
+      "name": "Tokat",
+      "osm_id": 223424
+    },
+    {
+      "name": "Trabzon",
+      "osm_id": 223447
+    },
+    {
+      "name": "Tunceli",
+      "osm_id": 223537
+    },
+    {
+      "name": "Şanlıurfa",
+      "osm_id": 223434
+    },
+    {
+      "name": "Uşak",
+      "osm_id": 223170
+    },
+    {
+      "name": "Van",
+      "osm_id": 223442
+    },
+    {
+      "name": "Yozgat",
+      "osm_id": 154450
+    },
+    {
+      "name": "Zonguldak",
+      "osm_id": 223459
+    },
+    {
+      "name": "Aksaray",
+      "osm_id": 154454
+    },
+    {
+      "name": "Bayburt",
+      "osm_id": 223446
+    },
+    {
+      "name": "Karaman",
+      "osm_id": 223137
+    },
+    {
+      "name": "Kırıkkale",
+      "osm_id": 223423
+    },
+    {
+      "name": "Batman",
+      "osm_id": 223437
+    },
+    {
+      "name": "Şırnak",
+      "osm_id": 223438
+    },
+    {
+      "name": "Bartın",
+      "osm_id": 223458
+    },
+    {
+      "name": "Ardahan",
+      "osm_id": 1251450
+    },
+    {
+      "name": "Iğdır",
+      "osm_id": 186434
+    },
+    {
+      "name": "Yalova",
+      "osm_id": 223472
+    },
+    {
+      "name": "Karabük",
+      "osm_id": 223455
+    },
+    {
+      "name": "Kilis",
+      "osm_id": 223140
+    },
+    {
+      "name": "Osmaniye",
+      "osm_id": 167232
+    },
+    {
+      "name": "Düzce",
+      "osm_id": 223460
+    }
+  ]
+}

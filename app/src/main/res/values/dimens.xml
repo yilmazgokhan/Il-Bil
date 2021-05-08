@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_bottom_sheet_peek_height">40dp</dimen>
+    <dimen name="default_popup_margin">8dp</dimen>
+    <dimen name="default_popup_padding">16dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="heart_size">48dp</dimen>
+    <dimen name="clock_size">36dp</dimen>
+</resources>

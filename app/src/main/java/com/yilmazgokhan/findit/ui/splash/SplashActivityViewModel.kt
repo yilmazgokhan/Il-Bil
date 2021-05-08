@@ -1,0 +1,23 @@
+package com.yilmazgokhan.findit.ui.splash
+
+import androidx.hilt.Assisted
+import androidx.hilt.lifecycle.ViewModelInject
+import androidx.lifecycle.SavedStateHandle
+import com.blankj.utilcode.util.LogUtils
+import com.yilmazgokhan.findit.base.BaseViewModel
+import com.yilmazgokhan.findit.di.qualifier.IoDispatcher
+import kotlinx.coroutines.CoroutineDispatcher
+
+/**
+ * ViewModel class for [SplashActivity]
+ */
+
+class SplashActivityViewModel @ViewModelInject constructor(
+    @Assisted private val savedStateHandle: SavedStateHandle,
+    @IoDispatcher private val ioDispatcher: CoroutineDispatcher
+) : BaseViewModel() {
+
+    init {
+        LogUtils.d("$this initialized")
+    }
+}
