@@ -65,7 +65,7 @@ fun Game.calculateScore(): Int {
         else -> {
             pointOfCorrect = this.correct?.times(20)!!
             if (this.fail != null)
-                pointOfFail = this.fail?.times(10)!!
+                pointOfFail = this.fail?.times(2)!!
         }
     }
 
@@ -82,7 +82,7 @@ fun Game.calculateScore(): Int {
     val bonusCount: Int = this.correct?.div(10)!!
     val score = resultScore + bonusCount
     return if (score > 0)
-        score
+        score * 10
     else 0
 }
 
