@@ -70,7 +70,11 @@ fun Game.calculateScore(): Int {
     }
 
     val basePoint = pointOfCorrect - pointOfFail
-    var timeRate = this.time!!.toDouble() / this.correct!!
+    var timeRate = 0.0
+    if (this.time != 0) {
+        timeRate = this.time!!.toDouble() / this.correct!!
+    }
+
     if (timeRate == 0.0)
         timeRate = 1.0
     val resultScoreAsDouble = basePoint.toDouble() / timeRate
