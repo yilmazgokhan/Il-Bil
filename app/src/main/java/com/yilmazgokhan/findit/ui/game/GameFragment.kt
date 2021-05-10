@@ -116,7 +116,11 @@ class GameFragment : BaseFragment(R.layout.fragment_game), OnMapReadyCallback {
         dialog.show()
 
         // TODO: 21.04.2021
-        clock_animation.stop()
+        try {
+            clock_animation.stop()
+        } catch (e: Exception) {
+            LogUtils.d("$this ${e.message}")
+        }
 
         viewConfetti.build()
             .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA)
@@ -184,7 +188,7 @@ class GameFragment : BaseFragment(R.layout.fragment_game), OnMapReadyCallback {
      * Initialize observers
      */
     private fun observeModel() {
-        viewModel.cityInfo.observe(this, Observer {
+        viewModel.cityInfo.observe(viewLifecycleOwner, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
                     it.data.let { res ->
@@ -206,7 +210,7 @@ class GameFragment : BaseFragment(R.layout.fragment_game), OnMapReadyCallback {
                 }
             }
         })
-        viewModel.round.observe(this, Observer {
+        viewModel.round.observe(viewLifecycleOwner, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
                     if (it.data?.isCorrect == true)
@@ -219,7 +223,7 @@ class GameFragment : BaseFragment(R.layout.fragment_game), OnMapReadyCallback {
                 }
             }
         })
-        viewModel.options.observe(this, Observer {
+        viewModel.options.observe(viewLifecycleOwner, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
                     it.data?.let { it1 -> prepareButtons(it1) }
@@ -230,18 +234,22 @@ class GameFragment : BaseFragment(R.layout.fragment_game), OnMapReadyCallback {
                 }
             }
         })
-        viewModel.finishGame.observe(this, Observer {
+        viewModel.finishGame.observe(viewLifecycleOwner, Observer {
             gameService.rankingSwitchStatus(1)
             gameService.submitScoreWithResult(it.score?.toLong() ?: 0)
             showFinishGameDialog(it)
             hideOptionContainer()
         })
-        viewModel.timer.observe(this, {
+        viewModel.timer.observe(viewLifecycleOwner, {
             alphaBetView.setText(it.toString())
             if (it.toString() == "1")
-                clock_animation.animateIndeterminate()
+                try {
+                    clock_animation.animateIndeterminate()
+                } catch (e: Exception) {
+                    LogUtils.d("$this ${e.message}")
+                }
         })
-        viewModel.correctAnswer.observe(this, {
+        viewModel.correctAnswer.observe(viewLifecycleOwner, {
             val achievementId = it.achievementId()
             if (achievementId != null)
                 gameService.unlockAchievements(achievementId)
